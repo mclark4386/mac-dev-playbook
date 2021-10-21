@@ -24,14 +24,14 @@ sudoers_custom_config: ''
 #   # Allow users in admin group to use sudo with no password.
 #   %admin ALL=(ALL) NOPASSWD: ALL
 
-dotfiles_repo: https://github.com/geerlingguy/dotfiles.git
+dotfiles_repo: https://github.com/mclark4386/dotfiles-1.git
 dotfiles_repo_accept_hostkey: true
 dotfiles_repo_local_destination: ~/Development/GitHub/dotfiles
 dotfiles_files:
   - .zshrc
   - .gitignore
   - .inputrc
-  - .osx
+#   - .osx
   - .vimrc
 
 homebrew_installed_packages:
@@ -62,32 +62,146 @@ homebrew_installed_packages:
   - wget
   - wrk
   - zsh-history-substring-search
+  #added mine:
+  - molten-vk
+  - rtmpdump
+  - rustup-init
+  - ncurses
+  - scons
+  - git-lfs
+  - ninja
+  - node@10
+  - speex
+  - boost
+  - gnupg
+  - node@12
+  - node@14
+  - buffalo
+  - go-task
+  - odin
+  - terraform
+  - ca-certificates
+  - theora
+  - lame
+  - tinc
+  - clisp
+  - tor
+  - cmake
+  - openexr
+  - cocoapods
+  - openfortivpn
+  - unrar
+  - coreutils
+  - unzip
+  - deno
+  - vala
+  - dmd
+  - dmg2img
+  - webp
+  - wget
+  - libimobiledevice
+  - wtfutil
+  - dub
+#   - handbrake
+  - pianobar
+  - x264
+  - elm
+  - x265
+  - emacs
+  - exercism
+  - htop
+  - llvm
+  - pkg-config
+  - faad2
+  - hwloc
+#   - postgresql
+  - xterm
+  - ffmpeg
+  - lua@5.1
+  - protobuf
+  - xvid
+  - ideviceinstaller
+  - pwntools
+  - xz
+  - flac
+  - libogg
+  - lzo
+  - youtube-dl
+  - python
+  - zeromq
+  - mad
+  - ios-deploy
+  - maven
+  - qemu
+  - gatsby-cli
+  - minetest
+  - ranger
+  - gcc
+  - minicom
+  - minikube
 
 homebrew_taps:
   - homebrew/core
   - homebrew/cask
+  #added mine:
+  - gobuffalo/tap
+  - wtfutil/wtfutil
+  - homebrew/cask-fonts
+  - go-task/tap
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
   - chromedriver
   - docker
-  - dropbox
-  - firefox
+#   - dropbox
+#   - firefox
   - google-chrome
   - handbrake
   - licecap
-  - sequel-ace
+#   - sequel-ace
   - slack
-  - sublime-text
+#   - sublime-text
   - transmit
   - vagrant
+  #added mine:
+  - dbeaver-community
+  - ghidra
+  - inkscape
+  - ltspice
+  - perforce
+  - arduino
+  - detectx-swift
+  - gimp
+  - meld
+  - discord
+  - godot
+  - jd-gui
+  - vlc
+  - dotnet-sdk
+  - graphiql
+  - kdiff3
+  - netron
+  - runjs
+  - weka
+  - blender
+  - font-fira-code
+  - krita
+  - obs
+  - thonny
+  - fritzing
+  - hermes
+  - libreoffice
+  - olive
+  - twine
+  - wireshark
 
 # See `geerlingguy.mas` role documentation for usage instructions.
 mas_installed_apps: []
 mas_email: ""
 mas_password: ""
 
-osx_script: "~/.osx --no-restart"
+#commenting this part until I am sure I want all those changes
+# osx_script: "~/.osx --no-restart"
 
 # Install packages from other package managers.
 # Note: You are responsible for making sure the required package managers are
@@ -111,21 +225,21 @@ pip_packages: []
 
 # Set to 'true' to configure Sublime Text.
 configure_sublime: false
-sublime_base_path: '~/Library/Application Support/Sublime Text'
-sublime_config_path: "Packages/User"
-sublime_package_control:
-  - "DocBlockr"
-  - "Dockerfile Syntax Highlighting"
-  - "FileDiffs"
-  - "GitHub Flavored Markdown Preview"
-  - "Jinja2"
-  - "Package Control"
-  - "PHP-Twig"
-  - "Pretty JSON"
-  - "SublimeLinter"
-  - "SublimeLinter-contrib-yamllint"
-  - "TrailingSpaces"
-  - "WordCount"
+# sublime_base_path: '~/Library/Application Support/Sublime Text'
+# sublime_config_path: "Packages/User"
+# sublime_package_control:
+#   - "DocBlockr"
+#   - "Dockerfile Syntax Highlighting"
+#   - "FileDiffs"
+#   - "GitHub Flavored Markdown Preview"
+#   - "Jinja2"
+#   - "Package Control"
+#   - "PHP-Twig"
+#   - "Pretty JSON"
+#   - "SublimeLinterß
+#   - "SublimeLinter-contrib-yamllint"
+#   - "TrailingSpaces"
+#   - "WordCount"
 
 # Glob pattern to ansible task files to run after all other tasks are finished.
 post_provision_tasks: []
