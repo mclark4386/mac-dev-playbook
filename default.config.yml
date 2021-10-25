@@ -164,6 +164,7 @@ homebrew_cask_apps:
   - transmit
   - vagrant
   #added mine:
+  - docker-compose
   - dbeaver-community
   - ghidra
   - inkscape
